@@ -36,10 +36,10 @@ args = vars(ap.parse_args())
 # Let's start by initialising the list of the 21 class labels MobileNet SSD was trained to.
 # Each prediction composes of a boundary box and 21 scores for each class (one extra class for no object),
 # and we pick the highest score as the class for the bounded object
-CLASSES = ["aeroplane", "background", "bicycle", "bird", "boat",
-           "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
-           "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
-           "sofa", "train", "tvmonitor","key" ,"trees" ," buildings", "fan" ," table", " tubelight" ,"mobile"]
+CLASSES = [ "background", "bicycle", "bird", 
+           "bottle",  "car", "cat", "chair", 
+            "motorbike", "person", "pottedplant", 
+           "sofa",  "tvmonitor","key" ,"trees" ," buildings", "fan" ," table", " tubelight" ,"mobile" ,"hand"]
 
 # Assigning random colors to each of the classes
 COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
